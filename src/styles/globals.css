@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;  
+  /* margin-left: 13px; */
+  /* margin-right: 13px; */
+  box-shadow: 0 5px 5px rgb(65, 63, 63);
+  padding: 5px;
+  margin-bottom: 13px;
+  
+  border-bottom: 1px solid rgba(189, 187, 187, 0.534);
+   
+}
+
+ul{
+  display: flex;
+  gap: 10px; 
+}
+
+a{
+  transform: scale(1.0);
+  color: rgb(98, 100, 100);
+  transition: all .1s ease-in-out;
+  font-weight: 500;
+}
+
+a:hover{
+  color: rgb(44, 44, 44);  
+  border-bottom: 2px solid #e42121
+}
+
+.signin-form{
+  display: block;
+  margin-top: 30px;
+  margin-left: 12px;
+}
+
+input{
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid rgb(28, 46, 1);
+}
+
+input:focus{
+  outline: none;
+  border: none;
+  box-shadow: 0 0px 10px rgba(145, 233, 14, 0.952);
+}
+/* .signin-name{
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+.signin-password{
+  display: block;
+} */
+
